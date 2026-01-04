@@ -61,7 +61,8 @@
 </div>
 </div>
 <div class="offset-lg-1 col-lg-5">
-<form action="#" class="contact-area__form contact-form-validated form-one wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
+<form action="{% url 'website:contact' %}" method="post" class="contact-area__form form-one wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
+{% csrf_token %}
 <h4 class="contact-area__form__title">Send Message</h4>
 <div class="form-one__group">
 <div class="form-one__control form-one__control--full">

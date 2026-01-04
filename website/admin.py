@@ -1,11 +1,10 @@
 from django.contrib import admin
-from . models import AboutImages, HomeServiceCard, HomeProjectLoader,HomeWhyChooseUs,HomeFaq,HomeOurPackages, HomeTeamMember,HomeTestimonial
+from . models import AboutImages, HomeServiceCard, HomeProjectLoader,HomeWhyChooseUs,HomeFaq,HomeOurPackages, HomeTeamMember,HomeTestimonial,ContactMessage
 
 
 # Register your models here.
 
 @admin.register(AboutImages)
-
 class AboutImagesAdmin(admin.ModelAdmin):
     list_display = ('id', 'first_image', 'second_image')
 
@@ -36,4 +35,8 @@ class HomeFaqAdmin(admin.ModelAdmin):
 @admin.register(HomeTestimonial)
 class HomeTestimonialAdmin(admin.ModelAdmin):   
     list_display = ('id', 'client_name', 'client_position', 'client_image', 'feedback')
+
+@admin.register(ContactMessage)
+class ContactMessageAdmin(admin.ModelAdmin):
+    list_display = ('name', 'email', 'subject', 'created_at')
 
