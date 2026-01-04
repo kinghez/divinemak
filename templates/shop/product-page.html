@@ -1,0 +1,312 @@
+{% extends 'partials/base.html' %}
+{% block content %}
+{% load static %}
+<section class="page-header">
+<div class="page-header__bg" style="background-image: url(assets/images/backgrounds/page-header-1-1.jpg);"></div>
+<div class="container">
+<div class="page-header__content">
+<h2 class="page-header__title bw-split-in-right">Shop Details</h2>
+<ul class="espartyox-breadcrumb list-unstyled">
+<li><a href="index.html">Home</a></li>
+<li><span>Shop Details</span></li>
+</ul>
+<span class="page-header__line"></span>
+</div>
+</div>
+</section>
+<section class="product-details section-space">
+<div class="container">
+<div class="row gutter-y-30 align-items-center">
+<div class="col-lg-6 wow fadeInLeft" data-wow-delay="100ms">
+<div class="product-details__product">
+<div class="product-details__thumb-box">
+<div class="product-details__thumb espartyox-slick__carousel" data-slick-options='{
+							"slidesToShow": 4,
+							"slidesToScroll": 1,
+							"autoplay": false,
+							"centerMode": true,
+							"centerPadding": 0,
+							"vertical": true,
+							"asNavFor": ".product-details__carousel",
+							"focusOnSelect": true,
+							"verticalSwiping": true,
+							"dots": false,
+							"arrows": false,
+							"responsive": [
+								{
+									"breakpoint": 1200,
+									"settings": {
+										"slidesToShow": 3
+									}
+								},
+								{
+									"breakpoint": 992,
+									"settings": {
+										"vertical": false,
+										"verticalSwiping": false
+									}
+								},
+								{
+									"breakpoint": 431,
+									"settings": {
+										"slidesToShow": 3,
+										"vertical": false,
+										"verticalSwiping": false
+									}
+								}
+							]
+							}'>
+<div class="item">
+<div class="product-details__thumb__item">
+<img alt="product thumb" src="{% static 'assets/images/products/product-d-thumb-1-1.png' %}"/>
+<div class="product-details__thumb__hover">
+<a class="img-popup" href="assets/images/products/product-d-thumb-1-1.png">
+<i class="fas fa-plus"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="item">
+<div class="product-details__thumb__item">
+<img alt="product thumb" src="{% static 'assets/images/products/product-d-thumb-1-2.png' %}"/>
+<div class="product-details__thumb__hover">
+<a class="img-popup" href="assets/images/products/product-d-thumb-1-2.png">
+<i class="fas fa-plus"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="item">
+<div class="product-details__thumb__item">
+<img alt="product thumb" src="{% static 'assets/images/products/product-d-thumb-1-3.png' %}"/>
+<div class="product-details__thumb__hover">
+<a class="img-popup" href="assets/images/products/product-d-thumb-1-3.png">
+<i class="fas fa-plus"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="item">
+<div class="product-details__thumb__item">
+<img alt="product thumb" src="{% static 'assets/images/products/product-d-thumb-1-4.png' %}"/>
+<div class="product-details__thumb__hover">
+<a class="img-popup" href="assets/images/products/product-d-thumb-1-4.png">
+<i class="fas fa-plus"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="item">
+<div class="product-details__thumb__item">
+<img alt="product thumb" src="{% static 'assets/images/products/product-d-thumb-1-1.png' %}"/>
+<div class="product-details__thumb__hover">
+<a class="img-popup" href="assets/images/products/product-d-thumb-1-1.png">
+<i class="fas fa-plus"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="item">
+<div class="product-details__thumb__item">
+<img alt="product thumb" src="{% static 'assets/images/products/product-d-thumb-1-2.png' %}"/>
+<div class="product-details__thumb__hover">
+<a class="img-popup" href="assets/images/products/product-d-thumb-1-2.png">
+<i class="fas fa-plus"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="item">
+<div class="product-details__thumb__item">
+<img alt="product thumb" src="{% static 'assets/images/products/product-d-thumb-1-3.png' %}"/>
+<div class="product-details__thumb__hover">
+<a class="img-popup" href="assets/images/products/product-d-thumb-1-3.png">
+<i class="fas fa-plus"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="item">
+<div class="product-details__thumb__item">
+<img alt="product thumb" src="{% static 'assets/images/products/product-d-thumb-1-4.png' %}"/>
+<div class="product-details__thumb__hover">
+<a class="img-popup" href="assets/images/products/product-d-thumb-1-4.png">
+<i class="fas fa-plus"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="product-details__carousel-box">
+<div class="product-details__carousel espartyox-slick__carousel" data-slick-options='{
+							"slidesToShow": 1,
+							"slidesToScroll": 1,
+							"autoplay": false,
+							"asNavFor": ".product-details__thumb",
+							"centerPadding": 0,
+							"centerPadding": 0,
+							"vertical": true,
+							"verticalSwiping": true,
+							"dots": false,
+							"arrows": false,
+							"responsive": [
+								{
+									"breakpoint": 992,
+									"settings": {
+										"slidesToShow": 1,
+										"vertical": false,
+										"verticalSwiping": false
+									}
+								}
+							]
+							}'>
+<div class="item">
+<div class="product-details__image">
+<span class="product-details__image__title">New</span>
+<img alt="product details" src="{% static 'assets/images/products/product-d-1-1.png' %}"/>
+</div>
+</div>
+<div class="item">
+<div class="product-details__image">
+<span class="product-details__image__title">Best Seller</span>
+<img alt="product details" src="{% static 'assets/images/products/product-d-1-1.png' %}"/>
+</div>
+</div>
+<div class="item">
+<div class="product-details__image">
+<span class="product-details__image__title">New</span>
+<img alt="product details" src="{% static 'assets/images/products/product-d-1-1.png' %}"/>
+</div>
+</div>
+<div class="item">
+<div class="product-details__image">
+<span class="product-details__image__title">Best Seller</span>
+<img alt="product details" src="{% static 'assets/images/products/product-d-1-1.png' %}"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6 wow fadeInRight" data-wow-delay="200ms">
+<div class="product-details__content">
+<h3 class="product-details__title">Property Sofa Business consulting Products best Solution services</h3><!-- /.product-title -->
+<div class="product-details__price-inner">
+<div class="product-details__price">
+<span class="product-details__price__regular">$48.00</span>
+</div>
+<div class="product-details__review">
+<span class="icon-star"></span>
+<span class="icon-star"></span>
+<span class="icon-star"></span>
+<span class="icon-star"></span>
+<span class="icon-star"></span>
+<a href="product-details.html">( 4.9 ) Average Rating</a>
+</div>
+</div>
+<div class="product-details__excerpt">Team tailored design, management &amp; support services Business business agency elit, sed do eiusmod tempor Â majority have in some we form, by injected humour solution.</div><!-- /.excerp-text -->
+<div class="product-details__color-inner">
+<h4 class="product-details__color__title">Color:</h4>
+<div class="product-details__color">
+<button></button>
+<button></button>
+<button></button>
+<button></button>
+<button></button>
+</div>
+</div>
+<div class="quantity-box">
+<button class="sub" type="button"><i class="fa fa-minus"></i></button>
+<input id="1" type="text" value="1"/>
+<button class="add" type="button"><i class="fa fa-plus"></i></button>
+</div>
+<div class="product-details__buttons">
+<a class="espartyox-btn" href="cart.html"> <span class="espartyox-btn__text">ADD TO CARD</span> <span class="espartyox-btn__icon"><i class="icon-right-arrow"></i></span></a>
+</div>
+<div class="product-details__socials">
+<h4 class="product-details__socials__title">Share:</h4>
+<a href="https://facebook.com"> <i aria-hidden="true" class="fab fa-facebook-f"></i> <span class="sr-only">Facebook</span></a>
+<a href="https://twitter.com"> <i aria-hidden="true" class="fab fa-twitter"></i> <span class="sr-only">Twitter</span> </a>
+<a href="https://linkedin.com"> <i aria-hidden="true" class="fab fa-linkedin-in"></i> <span class="sr-only">Linkedin</span> </a>
+<a href="https://instagram.com"> <i aria-hidden="true" class="fab fa-instagram"></i> <span class="sr-only">Instagram</span> </a>
+</div>
+</div>
+</div>
+</div>
+<div class="product-details__description wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
+<h3 class="product-details__description__title">Description</h3>
+<p class="product-details__description__text">Roofing and counseling are fascinating fields that delve into understanding human behavior, emotions, and mental processes. Psychology is the scientific study of the mind and behavior, encompassing various subfields such as clinical psychology, social psychology, cognitive and building developmental psychology, among others. Counseling, on the other hand, focuses on helping individuals deal with personal and interpersonal enhance their well-being and improve their quality of life.</p>
+<ul class="list-unstyled product-details__description__lists">
+<li><i class="fas fa-arrow-circle-right"></i> There are many variations of passages of this business magical therapy.</li>
+<li><i class="fas fa-arrow-circle-right"></i> There are many variations of passages of this business magical therapy.</li>
+<li><i class="fas fa-arrow-circle-right"></i> We available but simply free text available in the market sit majority.</li>
+<li><i class="fas fa-arrow-circle-right"></i> We available but simply free text available in the market sit majority.</li>
+</ul>
+<p class="product-details__description__text">We psychology and counseling are fascinating fields that delve into understanding human behavior, emotions, and mental processes. Psychology is the scientific study of the mind and behavior, encompassing various subfields such as clinical psychology, social psychology, cognitive psychology, and developmental psychology, among others. Counseling, on the other hand, focuses on helping individuals deal with personal and interpersonal to enhance their well-being and improve their quality of life.</p>
+</div>
+<div class="product-details__comment wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
+<h3 class="product-details__review-title">2 Reviews</h3>
+<div class="product-details__comment-box">
+<figure class="product-details__comment-box__thumb">
+<img alt="espartyox" src="{% static 'assets/images/products/user-1-1.jpg' %}"/>
+</figure>
+<h4 class="product-details__comment-box__meta">Jeffrey Brown<span class="product-details__comment-box__date"> 20 Mar, 2024 . 4:00 Pm</span></h4>
+<div class="product-details__comment-box__ratings">
+<i class="icon-star"></i>
+<i class="icon-star"></i>
+<i class="icon-star"></i>
+<i class="icon-star"></i>
+<i class="icon-star"></i>
+</div>
+<p class="product-details__comment-box__text">Nam vel lacus eu nisl bibendum accumsan vitae vitae nibh. Nam nec eros id magna hendrerit sagittis. Nullam sed mi non odio feugiat volutat sit amet nec elit. Maecenas id hendrerit ipsum. Sed eget auctor metus, ac dapibus dolor. Nam vel lacus eu nisl bibendum accumsan Nam vel lacus eu nisl bibendum accumsan vitae vitae nibh. Nam nec eros</p>
+</div>
+<div class="product-details__comment-box">
+<figure class="product-details__comment-box__thumb">
+<img alt="espartyox" src="{% static 'assets/images/products/user-1-2.jpg' %}"/>
+</figure>
+<h4 class="product-details__comment-box__meta">Michelle Taylor<span class="product-details__comment-box__date">20 Mar, 2023 . 4:00 Pm</span></h4>
+<div class="product-details__comment-box__ratings">
+<i class="icon-star"></i>
+<i class="icon-star"></i>
+<i class="icon-star"></i>
+<i class="icon-star"></i>
+<i class="icon-star"></i>
+</div>
+<p class="product-details__comment-box__text">Nam vel lacus eu nisl bibendum accumsan vitae vitae nibh. Nam nec eros id magna hendrerit sagittis. Nullam sed mi non odio feugiat volutat sit amet nec elit. Maecenas id hendrerit ipsum. Sed eget auctor metus, ac dapibus dolor. Nam vel lacus eu nisl bibendum accumsan Nam vel lacus eu nisl bibendum accumsan vitae vitae nibh. Nam nec eros</p>
+</div>
+</div>
+<!-- /.product-comment -->
+<!-- /.product-comment-form -->
+<div class="product-details__form wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
+<h3 class="product-details__form-title">Add a Review</h3>
+<div class="product-details__form-ratings">
+<p class="product-details__form-ratings__label">Rate this Product</p>
+<i class="far fa-star"></i>
+<i class="far fa-star"></i>
+<i class="far fa-star"></i>
+<i class="far fa-star"></i>
+<i class="far fa-star"></i>
+</div>
+<form class="comments-form__form contact-form-validated product-details__form__form form-one">
+<div class="form-one__group">
+<div class="form-one__control">
+<input name="name" placeholder="First Name" type="text"/>
+</div>
+<div class="form-one__control">
+<input name="email" placeholder="Email Address" type="email"/>
+</div>
+<div class="form-one__control form-one__control--full">
+<textarea name="message" placeholder="Write a Message"></textarea>
+</div>
+<div class="form-one__control">
+<button class="espartyox-btn" type="submit"> <span class="espartyox-btn__text">SEND REQUEST</span> <span class="espartyox-btn__icon"><i class="icon-right-arrow"></i></span></button>
+</div>
+</div>
+</form>
+<div class="result"></div>
+</div>
+</div>
+</section>
+
+{% endblock content %}

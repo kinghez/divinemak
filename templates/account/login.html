@@ -1,0 +1,90 @@
+{% extends 'partials/base.html' %}
+{% block content %}
+{% load static %}
+<section class="page-header">
+<div class="page-header__bg" style="background-image: url(assets/images/backgrounds/page-header-1-1.jpg);"></div>
+<div class="container">
+<div class="page-header__content">
+<h2 class="page-header__title bw-split-in-right">Login</h2>
+<ul class="espartyox-breadcrumb list-unstyled">
+<li><a href="{% url 'website:index' %}">Home</a></li>
+<li><span>Login</span></li>
+</ul>
+<span class="page-header__line"></span>
+</div>
+</div>
+</section>
+<!-- Login Start -->
+<section class="login-page section-space">
+<div class="container">
+<div class="row gutter-y-30 align-items-center">
+<div class="col-xl-6">
+<div class="login-page__left wow fadeInLeft" data-wow-delay="500ms" data-wow-duration="1500ms">
+<div class="login-page__thumb real-image">
+<img alt="login image" src="{% static 'assets/images/resources/login-1-1.png' %}"/>
+</div>
+<div class="login-page__thumb-two">
+<img alt="espartyox image" src="{% static 'assets/images/resources/login-s-1-1.png' %}"/>
+</div>
+</div>
+</div>
+<div class="col-xl-6">
+<div class="login-page__right wow fadeInRight" data-wow-delay="500ms" data-wow-duration="1500ms">
+<div class="login-page__login-box">
+<div class="login-page__content">
+<div class="login-page__logo">
+<a href="index.html">
+<img alt="logo" src="{% static 'assets/images/logo-light-3.png' %}" width="202"/>
+</a>
+</div>
+<style>
+    h5{
+        color: red;
+    }
+</style>
+{% if messages %}
+    {% for message in messages %}
+        <h5>{{ message }}</h5>
+    {% endfor %}
+{% endif %}
+
+<h2 class="login-page__title">Nice to see you again</h2>
+<form action="{% url 'account:login' %}" class="form-one" method="post">
+    {% csrf_token %}
+<div class="login-page__group">
+<div class="login-page__input-box">
+<label for="name">Login</label>
+<input id="name" name="name" placeholder="Email or phone number" type="text"/>
+</div>
+<div class="login-page__input-box">
+<label for="password">Password</label>
+<input class="login-page__password" id="password" name="password" placeholder="Enter Password" type="password"/>
+<span class="toggle-password pass-field-icon fa fa-fw fa-eye-slash"></span>
+</div>
+<div class="login-page__input-box login-page__input-box--bottom">
+<div class="login-page__input-box__inner">
+<input class="login-page__input-box__toggle" id="remember-policy" type="checkbox"/>
+<label class="remember-policy" for="remember-policy">remember me</label>
+</div>
+<a class="login-page__form__forgot" href="#">forgot password?</a>
+</div>
+<div class="login-page__input-box">
+<div class="login-page__input-box__btn">
+<button class="espartyox-btn" type="submit">Sign in</button>
+</div>
+<div class="login-page__input-box__btn">
+<button class="espartyox-btn espartyox-btn__google" type="submit"> Or sign in with Google</button>
+</div>
+</div>
+</div>
+</form>
+<p class="login-page__form__text">Dont have an account?<a href="{% url 'account:register' %}">Register now</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+{% endblock content %}

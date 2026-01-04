@@ -1,0 +1,307 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Divinemak || spare part sells || Real Estate Construction Management</title>
+<!-- favicons Icons -->
+<link href="{% static 'assets/images/favicons/apple-touch-icon.png' %}" rel="apple-touch-icon" sizes="180x180"/>
+<link href="{% static 'assets/images/favicons/favicon-32x32.png' %}" rel="icon" sizes="32x32" type="image/png"/>
+<link href="{% static 'assets/images/favicons/favicon-16x16.png' %}" rel="icon" sizes="16x16" type="image/png"/>
+<link href="{% static 'assets/images/favicons/site.webmanifest' %}" rel="manifest"/>
+<meta content="bracketweb" name="authoe"/>
+<meta content="Espartyox is a modern creative Busniess Agency HTML template. This fits all agencies whether you are a business agency, web agency, freelancer, portfolio agency, web design company, web designer, digital marketing, or any type of design agency websites and businesses." name="description"/>
+<!-- fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Jost:ital,wght@0,100..900;1,100..900&amp;family=Work+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="{% static 'assets/vendors/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet"/>
+<link href="{% static 'assets/vendors/bootstrap-select/bootstrap-select.min.css' %}" rel="stylesheet"/>
+<link href="{% static 'assets/vendors/animate/animate.min.css' %}" rel="stylesheet"/>
+<link href="{% static 'assets/vendors/fontawesome/css/all.min.css' %}" rel="stylesheet"/>
+<link href="{% static 'assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css' %}" rel="stylesheet"/>
+<link href="{% static 'assets/vendors/espartyox-icons/style.css' %}" rel="stylesheet"/>
+<link href="{% static 'assets/vendors/slick/slick.css' %}" rel="stylesheet"/>
+<link href="{% static 'assets/vendors/owl-carousel/css/owl.carousel.min.css' %}" rel="stylesheet"/>
+<link href="{% static 'assets/vendors/owl-carousel/css/owl.theme.default.min.css' %}" rel="stylesheet"/>
+<!-- template styles -->
+<link href="{% static 'assets/css/espartyox.css' %}" rel="stylesheet"/>
+</head>
+<body class="custom-cursor">
+<div class="custom-cursor__cursor"></div>
+<div class="custom-cursor__cursor-two"></div>
+<div class="preloader">
+<div class="preloader__image" style="background-image: url(assets/images/loader.png);"></div>
+</div>
+<div class="page-wrapper">
+<div class="topbar">
+<div class="container">
+<div class="topbar__inner">
+<ul class="list-unstyled topbar__info">
+<li>
+<span class="topbar__info__icon"><i class="icon-surface1"></i></span>
+<p>Monday To Saturday: 8.00 am - 7.00 pm</p>
+</li>
+<li>
+<span class="topbar__info__icon"><i class="icon-location"></i></span>
+<a href="https://www.google.com/maps">N03 Enen Ekpene Eket, Akwa Ibom State, Nigeria</a>
+</li>
+</ul>
+<div class="topbar__info__right">
+<ul class="list-unstyled topbar__info">
+<li>
+<span class="topbar__info__icon"><i class="icon-chat"></i></span>
+<a href="espartyox-html/faq.html"> FAQ</a>
+</li>
+<li>
+<span class="topbar__info__icon"><i class="icon-support"></i></span>
+<a href="{% url 'website:contact' %}"> Support</a>
+</li>
+</ul>
+<div class="user-info">
+<button class="user-info__btn"><span class="icon-world"></span> English </button>
+<!-- <div class="user-info__dropdown" style="display: none;">
+<a href="#"> <i class="icon-world"></i> Bangla</a>
+<a href="#"> <i class="icon-world"></i> Hindi</a>
+<a href="#"> <i class="icon-world"></i> Arabic</a> -->
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<header class="main-header main-header--one sticky-header sticky-header--normal">
+<div class="container">
+<div class="main-header__inner">
+<div class="main-header__logo">
+<a href="index.html">
+<img alt="Espartyox HTML" src="{% static 'assets/images/divine-logo.png' %}" width="50" height="50"/>
+</a>
+</div>
+<nav class="main-header__nav main-menu">
+<ul class="main-menu__list">
+<li><a href="{% url 'website:index' %}">Home</a></li>
+<li><a href="{% url 'website:about'%}">About</a></li>
+{% if user.is_authenticated %}
+<li><a href="{% url 'account:logout' %}">Logout</a></li>
+{% else%}
+<li><a href="{% url 'account:login' %}">Join/Login</a></li>
+{% endif %}
+<li><a href="{% url 'website:service' %}">Services</a></li>
+<li><a href="{% url 'shop:product' %}">Shop</a></li>
+<li>
+<a href="{% url 'website:blog' %}">Blog</a>
+</li>
+<li>
+<a href="{% url 'website:contact' %}">Contact</a>
+</li>
+</ul>
+</nav>
+<div class="main-header__right">
+<div class="main-header__btn">
+<a class="espartyox-btn" href="{% url 'website:contact' %}"> <span class="espartyox-btn__text">FREE CONSULT</span> <span class="espartyox-btn__icon"><i class="icon-right-arrow"></i></span></a>
+</div>
+<div class="mobile-nav__btn mobile-nav__toggler">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+</div>
+</div>
+</header>
+<section class="main-slider-one" id="home">
+<div class="main-slider-one__social">
+<a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+<a href="https://pinterest.com"><i class="fab fa-pinterest-p"></i></a>
+<a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+<a href="https://youtube.com"><i class="fab fa-instagram"></i></a>
+</div>
+
+{% block content %}
+
+
+{% endblock content %}
+
+<!-- Footer Begins Here -->
+
+<div class="footer-cta">
+<div class="container">
+<div class="footer-cta__inner wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+<div class="row gutter-y-30 align-items-center">
+<div class="col-lg-6">
+<div class="footer-cta__title">
+<h3 class="footer-cta__title__text bw-split-in-scale">contact us today or </br> register a concern</h3>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="footer-cta__right">
+<a class="espartyox-btn" href="{% url 'website:contact' %}"> <span class="espartyox-btn__text">GET IN TOUCH</span> <span class="espartyox-btn__icon"><i class="icon-right-arrow"></i></span></a>
+<div class="footer-cta__call">
+<div class="footer-cta__call__icon">
+<i class="icon-phone"></i>
+</div>
+<div>
+<span class="footer-cta__call__text">Need Help?</span>
+<a href="tel:555-123-4567">+234 802 555 4444</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="main-footer">
+<div class="main-footer__bg" style="background-image: url(assets/images/backgrounds/footer-bg.jpg);"></div>
+<div class="main-footer__top">
+<div class="container">
+<div class="row gutter-y-40">
+<div class="col-lg-4 col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+<div class="footer-widget footer-widget--about">
+<a class="footer-logo" href="index.html">
+<img alt="divinemak HTML Template" src="{% static 'assets/images/divine-logo2.png' %}" width="202"/>
+</a>
+<ul class="list-unstyled footer-widget__info">
+<li><a href="https://www.google.com/maps"><i class="icon-location"></i> N03 Enen Ekpene, Eket, Akwa Ibom State</a></li>
+<li><a href="mailto:support@divinemak.com"><i class="icon-email"></i> support@divinemak.com</a></li>
+<li><a href="tel:704-705-1515"><i class="icon-phone"></i> +234 704 705 1515</a></li>
+</ul>
+<div class="footer-widget__social">
+<a href="https://facebook.com"><i class="fab fa-facebook"></i><span class="sr-only">Facebook</span></a>
+<a href="https://pinterest.com"><i class="fab fa-pinterest-p"></i><span class="sr-only">Pinterest</span></a>
+<a href="https://twitter.com"><i class="fab fa-twitter"></i><span class="sr-only">Twitter</span></a>
+<a href="https://youtube.com"><i class="fab fa-instagram"></i><span class="sr-only">Youtube</span></a>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+<div class="footer-widget__box footer-widget__box--one">
+<div class="footer-widget">
+<h2 class="footer-widget__title">Useful Link</h2>
+<ul class="list-unstyled footer-widget__links">
+<li><a href="{% url 'website:service' %}"> <i class="icon-arrow-left"></i> Case Stady</a></li>
+<li><a href="{% url 'website:blog' %}"> <i class="icon-arrow-left"></i> Resources</a></li>
+<li><a href="{% url 'website:service' %}"> <i class="icon-arrow-left"></i> Services</a></li>
+<li><a href="{% url 'website:contact' %}"> <i class="icon-arrow-left"></i> Team</a></li>
+<li><a href="{% url 'shop:product' %}"> <i class="icon-arrow-left"></i> shop</a></li>
+</ul>
+</div>
+<div class="footer-widget">
+<h2 class="footer-widget__title">Company</h2>
+<ul class="list-unstyled footer-widget__links">
+<li><a href="{% url 'website:about' %}"> <i class="icon-arrow-left"></i> About us</a></li>
+<li><a href="{% url 'website:service' %}"> <i class="icon-arrow-left"></i> Careers</a></li>
+<li><a href="{% url 'website:blog' %}"> <i class="icon-arrow-left"></i> Press</a></li>
+<li><a href="{% url 'website:blog' %}"> <i class="icon-arrow-left"></i> News</a></li>
+<li><a href="{% url 'website:contact' %}"> <i class="icon-arrow-left"></i> Contact</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-xl-4 col-md-8 wow fadeInUp" data-wow-delay="500ms">
+<div class="footer-widget__box footer-widget__box--two">
+<div class="footer-widget">
+<h2 class="footer-widget__title">Resources</h2>
+<ul class="list-unstyled footer-widget__links">
+<li><a href="{% url 'website:blog' %}"> <i class="icon-arrow-left"></i> Blog</a></li>
+<li><a href="espartyox-html/blog-list.html"> <i class="icon-arrow-left"></i> Newsletter</a></li>
+<li><a href="{% url 'website:service' %}"> <i class="icon-arrow-left"></i> Events</a></li>
+<li><a href="{% url 'website:contact' %}"> <i class="icon-arrow-left"></i> Help center</a></li>
+<li><a href="{% url 'website:contact' %}"> <i class="icon-arrow-left"></i> Support</a></li>
+</ul>
+</div>
+<div class="footer-widget">
+<h2 class="footer-widget__title">Service Link</h2>
+<ul class="list-unstyled footer-widget__links">
+<li><a href="espartyox-html/services-details.html"> <i class="icon-arrow-left"></i> Business Intelligence</a></li>
+<li><a href="services-d-market.html"> <i class="icon-arrow-left"></i> Risk Management</a></li>
+<li><a href="espartyox-html/services-details.html"> <i class="icon-arrow-left"></i> Finance Advisor</a></li>
+<li><a href="espartyox-html/services-d-management.html"> <i class="icon-arrow-left"></i> Portfolio Management</a></li>
+<li><a href="espartyox-html/services-details.html"> <i class="icon-arrow-left"></i> Consulting Network</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="main-footer__bottom wow fadeInUp" data-wow-delay="300ms">
+<div class="container">
+<div class="main-footer__bottom__inner">
+<p class="main-footer__copyright"> <span class="dynamic-year"></span> <span>Divinemak</span> All rights reservedÂ <a href="{% url 'website:contact' %}">Contact Us</a></p>
+<ul class="main-footer__bottom__list list-unstyled">
+<li><a href="espartyox-html/faq.html">Privacy Policy</a></li>
+<li><a href="espartyox-html/faq.html">Terms of Service</a></li>
+<li><a href="espartyox-html/faq.html">Legal Info</a></li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="mobile-nav__wrapper">
+<div class="mobile-nav__overlay mobile-nav__toggler"></div>
+<div class="mobile-nav__content">
+<span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+<div class="logo-box"> <a aria-label="logo image" href="{% url 'website:index' %}"><img alt="logo" src="{%static 'assets/images/divine-logo.png' %}" width="50" height="50"/></a> </div>
+<div class="mobile-nav__container"></div>
+<ul class="mobile-nav__contact list-unstyled">
+<li>
+<i class="fa fa-envelope"></i>
+<a href="mailto:support@divinemak.com">support@divinemak.com</a>
+</li>
+<li>
+<i class="fa fa-phone-alt"></i>
+<a href="tel:909-991-1665">(+234) 909 991 1665</a>
+</li>
+</ul>
+<div class="mobile-nav__social">
+<a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+<a href="https://pinterest.com"><i class="fab fa-pinterest-p"></i></a>
+<a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+<a href="https://youtube.com"><i class="fab fa-instagram"></i></a>
+</div>
+</div>
+</div>
+<div class="search-popup">
+<div class="search-popup__overlay search-toggler"></div>
+<div class="search-popup__content">
+<form action="#" class="search-popup__form" method="get" role="search">
+<input id="search" placeholder="Search Here..." type="text"/>
+<button aria-label="search submit" class="espartyox-btn" type="submit"><i class="icon-search"></i></button>
+</form>
+</div>
+</div>
+<div class="scroll-top" id="scroll-top">
+<span class="scroll-top-value" id="scroll-top-value"></span>
+</div>
+<script src="{% static 'assets/vendors/jquery/jquery-3.7.1.min.js' %}"></script>
+<script src="{% static 'assets/vendors/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'assets/vendors/bootstrap-select/bootstrap-select.min.js' %}"></script>
+<script src="{% static 'assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js' %}"></script>
+<script src="{% static 'assets/vendors/smooth-scroll/smooth-scroll.js' %}"></script>
+<script src="{% static 'assets/vendors/jquery-appear/jquery.appear.min.js' %}"></script>
+<script src="{% static 'assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'assets/vendors/jquery-validate/jquery.validate.min.js' %}"></script>
+<script src="{% static 'assets/vendors/wnumb/wNumb.min.js' %}"></script>
+<script src="{% static 'assets/vendors/jquery-ui/jquery-ui.js' %}"></script>
+<script src="{% static 'assets/vendors/owl-carousel/js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'assets/vendors/wow/wow.js' %}"></script>
+<script src="{% static 'assets/vendors/imagesloaded/imagesloaded.min.js' %}"></script>
+<script src="{% static 'assets/vendors/isotope/isotope.js' %}"></script>
+<script src="{% static 'assets/vendors/slick/slick.min.js' %}"></script>
+<script src="{% static 'assets/vendors/countdown/countdown.min.js' %}"></script>
+<script src="{% static 'assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js' %}"></script>
+<!-- gsap js -->'
+<script src="{% static 'assets/vendors/gsap/gsap.js' %}"></script>
+<script src="{% static 'assets/vendors/gsap/scrolltrigger.min.js' %}"></script>
+<script src="{% static 'assets/vendors/gsap/splittext.min.js' %}"></script>
+<script src="{% static 'assets/vendors/gsap/espartyox-split.js' %}"></script>
+<!-- template js -->'
+<script src="{% static 'assets/js/espartyox.js' %}"></script>
+</body>
+</html>

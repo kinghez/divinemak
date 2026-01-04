@@ -1,0 +1,167 @@
+{% extends 'partials/base.html' %}
+{% block content %}
+{% load static %}
+
+<section class="page-header">
+<div class="page-header__bg" style="background-image: url(assets/images/backgrounds/page-header-1-1.jpg);"></div>
+<div class="container">
+<div class="page-header__content">
+<h2 class="page-header__title bw-split-in-right">Our Contact Page</h2>
+<ul class="espartyox-breadcrumb list-unstyled">
+<li><a href="espartyox-html/index.html">Home</a></li>
+<li><span>Contact Divinemak</span></li>
+</ul>
+<span class="page-header__line"></span>
+</div>
+</div>
+</section>
+<section class="contact-area section-space">
+<div class="container">
+<div class="row gutter-y-30">
+<div class="col-lg-6">
+<div class="contact-area__content">
+<h2 class="contact-area__title bw-split-in-right">Schedule Your Complimentary <br/> Business Consultation</h2>
+<ul class="contact-area__list list-unstyled wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
+<li class="contact-area__list__item">
+<div class="icon">
+<i class="icon-location"></i>
+</div>
+<h4 class="contact-area__list__title">Location</h4>
+<p class="contact-area__list__text">N03 Enen Ekpene, Eket, Akwa Ibom State</p>
+</li>
+<li class="contact-area__list__item">
+<div class="icon">
+<i class="icon-email"></i>
+</div>
+<h4 class="contact-area__list__title">Support</h4>
+<a class="contact-area__list__text" href="mailto:support@divinemak.com">support@divinemak.com</a>
+<a class="contact-area__list__text" href="www.divinemak.com">www.divinemak.com</a>
+</li>
+<li class="contact-area__list__item">
+<div class="icon">
+<i class="icon-phone"></i>
+</div>
+<h4 class="contact-area__list__title">Get In Touch</h4>
+<a class="contact-area__list__text" href="tel:+234-802-555-4444">+234 802 555 4444</a>
+<a class="contact-area__list__text" href="tel:+234-704-705-1515">+234 704 705 1515</a>
+</li>
+<li class="contact-area__list__item">
+<div class="icon">
+<i class="icon-people"></i>
+</div>
+<h4 class="contact-area__list__title">Social Media</h4>
+<div class="footer-widget__social">
+<a href="https://facebook.com"><i class="fab fa-facebook"></i><span class="sr-only">Facebook</span></a>
+<a href="https://pinterest.com"><i class="fab fa-pinterest-p"></i><span class="sr-only">Pinterest</span></a>
+<a href="https://twitter.com"><i class="fab fa-twitter"></i><span class="sr-only">Twitter</span></a>
+<a href="https://youtube.com"><i class="fab fa-instagram"></i><span class="sr-only">Youtube</span></a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="offset-lg-1 col-lg-5">
+<form action="#" class="contact-area__form contact-form-validated form-one wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
+<h4 class="contact-area__form__title">Send Message</h4>
+<div class="form-one__group">
+<div class="form-one__control form-one__control--full">
+<label for="name">Full Name</label>
+<input id="name" name="name" placeholder="John Smith" type="text"/>
+</div>
+<div class="form-one__control form-one__control--full">
+<label for="email">Email Address</label>
+<input id="email" name="email" placeholder="support@gmail.com" type="email"/>
+</div>
+<div class="form-one__control form-one__control--full">
+<label for="sub">Subject</label>
+<input id="sub" name="subject" placeholder="I would like to discussed " type="text"/>
+</div>
+<div class="form-one__control form-one__control--full">
+<label for="massage">Write Message</label>
+<textarea id="massage" name="message" placeholder="Message"></textarea>
+</div>
+<div class="form-one__control form-one__control--full">
+<button class="espartyox-btn" type="submit"><span class="espartyox-btn__text">SEND MESSAGE</span> <span class="espartyox-btn__icon"><i class="icon-right-arrow"></i></span></button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<div class="contact-location section-space-bottom wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+<div class="container">
+<div class="google-map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4004.425645780316!2d7.93563564274779!3d4.635963624307092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1767501585605!5m2!1sen!2sng" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</div>
+</div>
+<!-- <div class="brand-carousel section-space-bottom wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+<div class="container">
+<div class="brand-carousel__top">
+<h4 class="brand-carousel__top__text">Trusted by 2,000+ Brands</h4>
+</div>
+<div class="brand-carousel espartyox-owl__carousel owl-theme owl-carousel" data-owl-options='{
+                "items": 5,
+                "margin": 35,
+                "smartSpeed": 600,
+                "loop":true,
+                "autoplay": 400,
+                "nav":false,
+                "dots":false,
+                "responsive":{
+                    "0":{
+                        "items":1,
+                        "margin": 0
+                    },
+                    "360":{
+                        "items":2,
+                        "margin": 30
+                    },
+                    "575":{
+                        "items":3,
+                        "margin": 30
+                    },
+                    "768":{
+                        "items":3,
+                        "margin": 80
+                    },
+                    "992":{
+                        "items": 4,
+                        "margin": 100
+                    },
+                    "1199":{
+                        "items": 5,
+                        "margin": 130
+                    }
+                }
+            }'>
+<div class="brand-carousel__item">
+<img alt="espartyox image" class="brand-carousel__image" src="{% static 'assets/images/resources/brand-1-1.png' %}"/>
+<img alt="espartyox image" class="brand-carousel__hover-image" src="{% static 'assets/images/resources/brand-1-1-hover.png' %}"/>
+</div>
+<div class="brand-carousel__item">
+<img alt="espartyox image" class="brand-carousel__image" src="{% static 'assets/images/resources/brand-1-1.png' %}"/>
+<img alt="espartyox image" class="brand-carousel__hover-image" src="{% static 'assets/images/resources/brand-1-1-hover.png' %}"/>
+</div>
+<div class="brand-carousel__item">
+<img alt="espartyox image" class="brand-carousel__image" src="{% static 'assets/images/resources/brand-1-1.png' %}"/>
+<img alt="espartyox image" class="brand-carousel__hover-image" src="{% static 'assets/images/resources/brand-1-1-hover.png' %}"/>
+</div>
+<div class="brand-carousel__item">
+<img alt="espartyox image" class="brand-carousel__image" src="{% static 'assets/images/resources/brand-1-1.png' %}"/>
+<img alt="espartyox image" class="brand-carousel__hover-image" src="{% static 'assets/images/resources/brand-1-1-hover.png' %}"/>
+</div>
+<div class="brand-carousel__item">
+<img alt="espartyox image" class="brand-carousel__image" src="{% static 'assets/images/resources/brand-1-1.png' %}"/>
+<img alt="espartyox image" class="brand-carousel__hover-image" src="{% static 'assets/images/resources/brand-1-1-hover.png' %}"/>
+</div>
+<div class="brand-carousel__item">
+<img alt="espartyox image" class="brand-carousel__image" src="{% static 'assets/images/resources/brand-1-1.png' %}"/>
+<img alt="espartyox image" class="brand-carousel__hover-image" src="{% static 'assets/images/resources/brand-1-1-hover.png' %}"/>
+</div>
+</div>
+</div>
+</div> -->
+
+{% endblock content %}

@@ -1,0 +1,395 @@
+{% extends 'partials/base.html' %}
+{% block content %}
+{% load static %}
+
+<section class="page-header">
+<div class="page-header__bg" style="background-image: url(assets/images/backgrounds/page-header-1-1.jpg);"></div>
+<div class="container">
+<div class="page-header__content">
+<h2 class="page-header__title bw-split-in-right">Our Products</h2>
+<ul class="espartyox-breadcrumb list-unstyled">
+<li><a href="espartyox-html/index.html">Home</a></li>
+<li><span>Products</span></li>
+</ul>
+<span class="page-header__line"></span>
+</div>
+</div>
+</section>
+<section class="product-page section-space">
+<div class="container">
+<div class="row gutter-y-50">
+<div class="col-xl-3 col-lg-4">
+<div class="product__sidebar product__sidebar-right">
+<div class="product__search wow fadeInUp" data-wow-delay="500ms">
+<form action="#" class="product__sidebar__search">
+<input placeholder="Search...." type="text"/>
+<button aria-label="search submit" type="submit"><i class="icon-search"></i></button>
+</form>
+</div>
+<div class="product__price-ranger wow fadeInUp" data-wow-delay="700ms">
+<h3 class="product__sidebar--title">Price</h3>
+<div class="price-ranger">
+<div id="slider-range"></div>
+<div class="ranger-min-max-block">
+<div class="ranger-min-max-block__price">
+<input class="min" readonly="" type="text"/>
+<span>-</span>
+<input class="max" readonly="" type="text"/>
+</div>
+<button class="espartyox-btn" type="submit" value="Apply">APPLY</button>
+</div>
+</div>
+</div>
+<div class="product__categories wow fadeInUp" data-wow-delay="900ms">
+<h3 class="product__sidebar--title">Categories</h3>
+<ul class="list-unstyled">
+<li><a href="espartyox-html/products.html"><span> <i class="icon-double-arrow-left"></i>Art &amp; Design</span><span>(8)</span></a></li>
+<li><a href="espartyox-html/products.html"><span> <i class="icon-double-arrow-left"></i>Crafts</span><span>(5)</span></a></li>
+<li><a href="espartyox-html/products.html"><span> <i class="icon-double-arrow-left"></i>Creat</span><span>(3)</span></a></li>
+<li><a href="espartyox-html/products.html"><span> <i class="icon-double-arrow-left"></i>Hobbies</span><span>(5)</span></a></li>
+<li><a href="espartyox-html/products.html"><span> <i class="icon-double-arrow-left"></i>Culture</span><span>(2)</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-xl-9 col-lg-8">
+<div class="product__info-top">
+<div class="product__showing-text-box">
+<p class="product__showing-text">Showing 1-9 of 12 Results</p>
+</div>
+<div class="product__showing-sort">
+<select aria-label="Defaul sorting" class="selectpicker">
+<option selected="">Defaul sorting</option>
+<option value="1">Sort by view</option>
+<option value="2">Sort by price</option>
+<option value="3">Sort by ratings</option>
+<option value="4">Sort by popular</option>
+</select>
+</div>
+</div>
+<div class="row gutter-y-30">
+<div class="col-md-6 col-lg-4">
+<div class="product__item wow fadeInUp" data-wow-delay="000ms" data-wow-duration="1500ms">
+<div class="product__item__img">
+<div class="product__item__img__item">
+<img alt="product image" src="{% static 'assets/images/products/product-1-1.png' %}"/>
+</div>
+<div class="product__item__btn">
+<a href="espartyox-html/product-details.html"><i class="fas fa-share-alt"></i></a>
+<a href="espartyox-html/cart.html"><i class="far fa-heart"></i></a>
+<a href="espartyox-html/product-details.html"><i class="fas fa-eye"></i></a>
+<a href="espartyox-html/product-details.html"><i class="fas fa-sync-alt"></i></a>
+</div>
+</div>
+<div class="product__item__content">
+<h4 class="product__item__title"><a href="espartyox-html/product-details.html">Pressure Machine</a></h4>
+<div class="product__item__price">$245 - $356</div>
+<div class="product__item__ratings">
+<i class="icon-sector"></i>
+<i class="icon-sector"></i>
+<i class="icon-sector"></i>
+<i class="icon-sector"></i>
+<i class="icon-sector"></i>
+</div>
+<a class="espartyox-btn product__item__link" href="espartyox-html/cart.html"><span class="espartyox-btn__text">Add to Cart</span> <span class="espartyox-btn__icon"><i class="icon-right-arrow"></i></span></a>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="product__item wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
+<div class="product__item__img">
+<div class="product__item__img__item">
+<img alt="product image" src="{% static 'assets/images/products/product-1-2.png' %}"/>
+</div>
+<div class="product__item__btn">
+<a href="espartyox-html/product-details.html"><i class="fas fa-share-alt"></i></a>
+<a href="espartyox-html/cart.html"><i class="far fa-heart"></i></a>
+<a href="espartyox-html/product-details.html"><i class="fas fa-eye"></i></a>
+<a href="espartyox-html/product-details.html"><i class="fas fa-sync-alt"></i></a>
+</div>
+</div>
+<div class="product__item__content">
+<h4 class="product__item__title"><a href="espartyox-html/product-details.html">Charir Colorful</a></h4>
+<div class="product__item__price">$245 - $356</div>
+<div class="product__item__ratings">
+<i class="icon-sector"></i>
+<i class="icon-sector"></i>
+<i class="icon-sector"></i>
+<i class="icon-sector"></i>
+<i class="icon-sector"></i>
+</div>
+<a class="espartyox-btn product__item__link" href="espartyox-html/cart.html"><span class="espartyox-btn__text">Add to Cart</span> <span class="espartyox-btn__icon"><i class="icon-right-arrow"></i></span></a>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="product__item wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+<div class="product__item__img">
+<div class="product__item__img__item">
+<img alt="product image" src="{% static 'assets/images/products/product-1-3.png' %}"/>
+</div>
+<div class="product__item__btn">
+<a href="espartyox-html/product-details.html"><i class="fas fa-share-alt"></i></a>
+<a href="espartyox-html/cart.html"><i class="far fa-heart"></i></a>
+<a href="espartyox-html/product-details.html"><i class="fas fa-eye"></i></a>
+<a href="espartyox-html/product-details.html"><i class="fas fa-sync-alt"></i></a>
+</div>
+</div>
+<div class="product__item__content">
+<h4 class="product__item__title"><a href="espartyox-html/product-details.html">Wood Chair</a></h4>
+<div class="product__item__price">$245 - $356</div>
+<div class="product__item__ratings">
+<i class="icon-sector"></i>
+<i class="icon-sector"></i>
+<i class="icon-sector"></i>
+<i class="icon-sector"></i>
+<i class="icon-sector"></i>
+</div>
+<a class="espartyox-btn product__item__link" href="espartyox-html/cart.html"><span class="espartyox-btn__text">Add to Cart</span> <span class="espartyox-btn__icon"><i class="icon-right-arrow"></i></span></a>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="product__item wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+<div class="product__item__img">
+<div class="product__item__img__item">
+<img alt="product image" src="{% static 'assets/images/products/product-1-4.png' %}"/>
+</div>
+<div class="product__item__btn">
+<a href="espartyox-html/product-details.html"><i class="fas fa-share-alt"></i></a>
+<a href="espartyox-html/cart.html"><i class="far fa-heart"></i></a>
+<a href="espartyox-html/product-details.html"><i class="fas fa-eye"></i></a>
+<a href="espartyox-html/product-details.html"><i class="fas fa-sync-alt"></i></a>
+</div>
+</div>
+<div class="product__item__content">
+<h4 class="product__item__title"><a href="espartyox-html/product-details.html">Fever Test Machine</a></h4>
+<div class="product__item__price">$245 - $356</div>
+<div class="product__item__ratings">
+<i class="icon-sector"></i>
+<i class="icon-sector"></i>
+<i class="icon-sector"></i>
+<i class="icon-sector"></i>
+<i class="icon-sector"></i>
+</div>
+<a class="espartyox-btn product__item__link" href="espartyox-html/cart.html"><span class="espartyox-btn__text">Add to Cart</span> <span class="espartyox-btn__icon"><i class="icon-right-arrow"></i></span></a>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="product__item wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+<div class="product__item__img">
+<div class="product__item__img__item">
+<img alt="product image" src="{% static 'assets/images/products/product-1-5.png' %}"/>
+</div>
+<div class="product__item__btn">
+<a href="espartyox-html/product-details.html"><i class="fas fa-share-alt"></i></a>
+<a href="espartyox-html/cart.html"><i class="far fa-heart"></i></a>
+<a href="espartyox-html/product-details.html"><i class="fas fa-eye"></i></a>
+<a href="espartyox-html/product-details.html"><i class="fas fa-sync-alt"></i></a>
+</div>
+</div>
+<div class="product__item__content">
+<h4 class="product__item__title"><a href="espartyox-html/product-details.html">Distress Stickers</a></h4>
+<div class="product__item__price">$245 - $356</div>
+<div class="product__item__ratings">
+<i class="icon-sector"></i>
+<i class="icon-sector"></i>
+<i class="icon-sector"></i>
+<i class="icon-sector"></i>
+<i class="icon-sector"></i>
+</div>
+<a class="espartyox-btn product__item__link" href="espartyox-html/cart.html"><span class="espartyox-btn__text">Add to Cart</span> <span class="espartyox-btn__icon"><i class="icon-right-arrow"></i></span></a>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="product__item wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1500ms">
+<div class="product__item__img">
+<div class="product__item__img__item">
+<img alt="product image" src="{% static 'assets/images/products/product-1-6.png' %}"/>
+</div>
+<div class="product__item__btn">
+<a href="espartyox-html/product-details.html"><i class="fas fa-share-alt"></i></a>
+<a href="espartyox-html/cart.html"><i class="far fa-heart"></i></a>
+<a href="espartyox-html/product-details.html"><i class="fas fa-eye"></i></a>
+<a href="espartyox-html/product-details.html"><i class="fas fa-sync-alt"></i></a>
+</div>
+</div>
+<div class="product__item__content">
+<h4 class="product__item__title"><a href="espartyox-html/product-details.html">Medicine Tool Box</a></h4>
+<div class="product__item__price">$245 - $356</div>
+<div class="product__item__ratings">
+<i class="icon-sector"></i>
+<i class="icon-sector"></i>
+<i class="icon-sector"></i>
+<i class="icon-sector"></i>
+<i class="icon-sector"></i>
+</div>
+<a class="espartyox-btn product__item__link" href="espartyox-html/cart.html"><span class="espartyox-btn__text">Add to Cart</span> <span class="espartyox-btn__icon"><i class="icon-right-arrow"></i></span></a>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="product__item wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+<div class="product__item__img">
+<div class="product__item__img__item">
+<img alt="product image" src="{% static 'assets/images/products/product-1-7.png' %}"/>
+</div>
+<div class="product__item__btn">
+<a href="espartyox-html/product-details.html"><i class="fas fa-share-alt"></i></a>
+<a href="espartyox-html/cart.html"><i class="far fa-heart"></i></a>
+<a href="espartyox-html/product-details.html"><i class="fas fa-eye"></i></a>
+<a href="espartyox-html/product-details.html"><i class="fas fa-sync-alt"></i></a>
+</div>
+</div>
+<div class="product__item__content">
+<h4 class="product__item__title"><a href="espartyox-html/product-details.html">Injection Syringe</a></h4>
+<div class="product__item__price">$245 - $356</div>
+<div class="product__item__ratings">
+<i class="icon-sector"></i>
+<i class="icon-sector"></i>
+<i class="icon-sector"></i>
+<i class="icon-sector"></i>
+<i class="icon-sector"></i>
+</div>
+<a class="espartyox-btn product__item__link" href="espartyox-html/cart.html"><span class="espartyox-btn__text">Add to Cart</span> <span class="espartyox-btn__icon"><i class="icon-right-arrow"></i></span></a>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="product__item wow fadeInUp" data-wow-delay="700ms" data-wow-duration="1500ms">
+<div class="product__item__img">
+<div class="product__item__img__item">
+<img alt="product image" src="{% static 'assets/images/products/product-1-8.png' %}"/>
+</div>
+<div class="product__item__btn">
+<a href="espartyox-html/product-details.html"><i class="fas fa-share-alt"></i></a>
+<a href="espartyox-html/cart.html"><i class="far fa-heart"></i></a>
+<a href="espartyox-html/product-details.html"><i class="fas fa-eye"></i></a>
+<a href="espartyox-html/product-details.html"><i class="fas fa-sync-alt"></i></a>
+</div>
+</div>
+<div class="product__item__content">
+<h4 class="product__item__title"><a href="espartyox-html/product-details.html">Medicine Tablet</a></h4>
+<div class="product__item__price">$245 - $356</div>
+<div class="product__item__ratings">
+<i class="icon-sector"></i>
+<i class="icon-sector"></i>
+<i class="icon-sector"></i>
+<i class="icon-sector"></i>
+<i class="icon-sector"></i>
+</div>
+<a class="espartyox-btn product__item__link" href="espartyox-html/cart.html"><span class="espartyox-btn__text">Add to Cart</span> <span class="espartyox-btn__icon"><i class="icon-right-arrow"></i></span></a>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="product__item wow fadeInUp" data-wow-delay="700ms" data-wow-duration="1500ms">
+<div class="product__item__img">
+<div class="product__item__img__item">
+<img alt="product image" src="{% static 'assets/images/products/product-1-1.png' %}"/>
+</div>
+<div class="product__item__btn">
+<a href="espartyox-html/product-details.html"><i class="fas fa-share-alt"></i></a>
+<a href="espartyox-html/cart.html"><i class="far fa-heart"></i></a>
+<a href="espartyox-html/product-details.html"><i class="fas fa-eye"></i></a>
+<a href="espartyox-html/product-details.html"><i class="fas fa-sync-alt"></i></a>
+</div>
+</div>
+<div class="product__item__content">
+<h4 class="product__item__title"><a href="espartyox-html/product-details.html">Medicine Tablet</a></h4>
+<div class="product__item__price">$245 - $356</div>
+<div class="product__item__ratings">
+<i class="icon-sector"></i>
+<i class="icon-sector"></i>
+<i class="icon-sector"></i>
+<i class="icon-sector"></i>
+<i class="icon-sector"></i>
+</div>
+<a class="espartyox-btn product__item__link" href="espartyox-html/cart.html"><span class="espartyox-btn__text">Add to Cart</span> <span class="espartyox-btn__icon"><i class="icon-right-arrow"></i></span></a>
+</div>
+</div>
+</div>
+<div class="col-lg-12">
+<ul class="post-pagination list-unstyled">
+<li class="active"><a href="espartyox-html/blog-list.html">01</a></li>
+<li><a href="espartyox-html/blog-list.html">02</a></li>
+<li><a href="espartyox-html/blog-list.html">03</a></li>
+<li><a href="espartyox-html/blog-list.html"><i class="icon-double-arrow"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="brand-carousel section-space-bottom wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+<div class="container">
+<div class="brand-carousel__top">
+<h4 class="brand-carousel__top__text">Trusted by 2,000+ Brands</h4>
+</div>
+<div class="brand-carousel espartyox-owl__carousel owl-theme owl-carousel" data-owl-options='{
+                "items": 5,
+                "margin": 35,
+                "smartSpeed": 600,
+                "loop":true,
+                "autoplay": 400,
+                "nav":false,
+                "dots":false,
+                "responsive":{
+                    "0":{
+                        "items":1,
+                        "margin": 0
+                    },
+                    "360":{
+                        "items":2,
+                        "margin": 30
+                    },
+                    "575":{
+                        "items":3,
+                        "margin": 30
+                    },
+                    "768":{
+                        "items":3,
+                        "margin": 80
+                    },
+                    "992":{
+                        "items": 4,
+                        "margin": 100
+                    },
+                    "1199":{
+                        "items": 5,
+                        "margin": 130
+                    }
+                }
+            }'>
+<div class="brand-carousel__item">
+<img alt="espartyox image" class="brand-carousel__image" src="{% static 'assets/images/resources/brand-1-1.png' %}"/>
+<img alt="espartyox image" class="brand-carousel__hover-image" src="{% static 'assets/images/resources/brand-1-1-hover.png' %}"/>
+</div>
+<div class="brand-carousel__item">
+<img alt="espartyox image" class="brand-carousel__image" src="{% static 'assets/images/resources/brand-1-1.png' %}"/>
+<img alt="espartyox image" class="brand-carousel__hover-image" src="{% static 'assets/images/resources/brand-1-1-hover.png' %}"/>
+</div>
+<div class="brand-carousel__item">
+<img alt="espartyox image" class="brand-carousel__image" src="{% static 'assets/images/resources/brand-1-1.png' %}"/>
+<img alt="espartyox image" class="brand-carousel__hover-image" src="{% static 'assets/images/resources/brand-1-1-hover.png' %}"/>
+</div>
+<div class="brand-carousel__item">
+<img alt="espartyox image" class="brand-carousel__image" src="{% static 'assets/images/resources/brand-1-1.png' %}"/>
+<img alt="espartyox image" class="brand-carousel__hover-image" src="{% static 'assets/images/resources/brand-1-1-hover.png' %}"/>
+</div>
+<div class="brand-carousel__item">
+<img alt="espartyox image" class="brand-carousel__image" src="{% static 'assets/images/resources/brand-1-1.png' %}"/>
+<img alt="espartyox image" class="brand-carousel__hover-image" src="{% static 'assets/images/resources/brand-1-1-hover.png' %}"/>
+</div>
+<div class="brand-carousel__item">
+<img alt="espartyox image" class="brand-carousel__image" src="{% static 'assets/images/resources/brand-1-1.png' %}"/>
+<img alt="espartyox image" class="brand-carousel__hover-image" src="{% static 'assets/images/resources/brand-1-1-hover.png' %}"/>
+</div>
+</div>
+</div>
+</div>
+
+{% endblock content %}

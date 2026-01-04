@@ -1,0 +1,151 @@
+{% extends 'partials/base.html' %}
+{% block content %}
+{% load static %}
+
+<section class="page-header">
+<div class="page-header__bg" style="background-image: url(assets/images/backgrounds/page-header-1-1.jpg);"></div>
+<div class="container">
+<div class="page-header__content">
+<h2 class="page-header__title bw-split-in-right">Cart</h2>
+<ul class="espartyox-breadcrumb list-unstyled">
+<li><a href="index.html">Home</a></li>
+<li><span>Products</span></li>
+</ul>
+<span class="page-header__line"></span>
+</div>
+</div>
+</section>
+<section class="cart-page section-space">
+<div class="container">
+<div class="row gutter-y-30">
+<div class="col-xl-12">
+<div class="table-responsive">
+<table class="table cart-page__table">
+<thead>
+<tr>
+<th>Product</th>
+<th>Price</th>
+<th>Quantity</th>
+<th>Sub Total</th>
+<th>Remove</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<div class="cart-page__table__meta">
+<div class="cart-page__table__meta__img">
+<img alt="Organ Meats" src="{% static 'assets/images/products/cart-1-1.png' %}"/>
+</div>
+<h3 class="cart-page__table__meta__title"><a href="espartyox-html/product-details.html">Smart Chair</a></h3>
+</div>
+</td>
+<td class="cart-page__table__price">$5000</td>
+<td>
+<div class="cart-page__table__quantity">
+<div class="quantity-box">
+<button class="quantity-box__btn sub" type="button"></button>
+<input class="quantity-box__input" name="quantity" type="number" value="0"/>
+<button class="quantity-box__btn add" type="button"></button>
+</div>
+</div>
+</td>
+<td class="cart-page__table__total">$5000</td>
+<td>
+<a class="cart-page__table__remove" href="cart.html"><i class="fas fa-times"></i></a>
+</td>
+</tr>
+<tr>
+<td>
+<div class="cart-page__table__meta">
+<div class="cart-page__table__meta__img">
+<img alt="Game Meat" src="{% static 'assets/images/products/cart-1-2.png' %}"/>
+</div>
+<h3 class="cart-page__table__meta__title"><a href="espartyox-html/product-details.html">Boss Chair</a></h3>
+</div>
+</td>
+<td class="cart-page__table__price">$4050</td>
+<td>
+<div class="cart-page__table__quantity">
+<div class="quantity-box">
+<button class="quantity-box__btn sub" type="button"></button>
+<input class="quantity-box__input" name="quantity" type="number" value="0"/>
+<button class="quantity-box__btn add" type="button"></button>
+</div>
+</div>
+</td>
+<td class="cart-page__table__total">$4050</td>
+<td>
+<a class="cart-page__table__remove" href="cart.html"><i class="fas fa-times"></i></a>
+</td>
+</tr>
+<tr>
+<td>
+<div class="cart-page__table__meta">
+<div class="cart-page__table__meta__img">
+<img alt="Game Meat" src="{% static 'assets/images/products/cart-1-3.png' %}"/>
+</div>
+<h3 class="cart-page__table__meta__title"><a href="espartyox-html/product-details.html">Sofa Chair</a></h3>
+</div>
+</td>
+<td class="cart-page__table__price">$2000</td>
+<td>
+<div class="cart-page__table__quantity">
+<div class="quantity-box">
+<button class="quantity-box__btn sub" type="button"></button>
+<input class="quantity-box__input" name="quantity" type="number" value="0"/>
+<button class="quantity-box__btn add" type="button"></button>
+</div>
+</div>
+</td>
+<td class="cart-page__table__total">$2000</td>
+<td>
+<a class="cart-page__table__remove" href="cart.html"><i class="fas fa-times"></i></a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cart-page__bottom">
+<div class="row gutter-y-40">
+<div class="col-xl-6 col-lg-7">
+<div class="cart-page__coupone">
+<form action="#" class="cart-page__coupone__form">
+<input class="cart-cupon__coupone__input" placeholder="Enter Cupon Code" type="text"/>
+<button class="cart-page__btn espartyox-btn" type="submit">Apply Coupon <i class="icon-angle-small-right"></i></button>
+</form>
+</div>
+</div>
+<div class="col-xl-6 col-lg-5">
+<div class="cart-page__cart-checkout">
+<ul class="cart-page__cart-total list-unstyled">
+<li class="cart-page__cart-total__amount">
+<span class="cart-page__cart-total__title">Cart Total</span>
+</li>
+<li class="cart-page__cart-total__amount">
+<span class="cart-page__cart-total__amount__title">Cart Subtotal</span>
+<span class="cart-page__cart-total__amount__text">$42.00</span>
+</li>
+<li class="cart-page__cart-total__amount">
+<span class="cart-page__cart-total__amount__title">Shipping</span>
+<span class="cart-page__cart-total__amount__text">Free</span>
+</li>
+<li class="cart-page__cart-total__amount">
+<span class="cart-page__cart-total__amount__title">Total</span>
+<span class="cart-page__cart-total__amount__text">$42.00</span>
+</li>
+</ul>
+<div class="cart-page__button">
+<a class="espartyox-btn" href="cart.html">Update<i class="icon-angle-small-right"></i></a>
+<a class="espartyox-btn" href="checkout.html">Checkout<i class="icon-angle-small-right"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+{% endblock content %}

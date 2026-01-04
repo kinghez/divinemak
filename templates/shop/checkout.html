@@ -1,0 +1,180 @@
+{% extends 'partials/base.html' %}
+{% block content %}
+{% load static %}
+
+<section class="page-header">
+<div class="page-header__bg" style="background-image: url(assets/images/backgrounds/page-header-1-1.jpg);"></div>
+<div class="container">
+<div class="page-header__content">
+<h2 class="page-header__title bw-split-in-right">Checkout</h2>
+<ul class="espartyox-breadcrumb list-unstyled">
+<li><a href="index.html">Home</a></li>
+<li><span>Products</span></li>
+</ul>
+<span class="page-header__line"></span>
+</div>
+</div>
+</section>
+<!-- Checkout Start -->
+<section class="checkout-page section-space">
+<div class="container">
+<div class="row">
+<div class="col-lg-6">
+<div class="checkout-page__coupon">
+<h3>Have a coupon? <a href="#">Click here to enter your code</a></h3>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-xl-6 col-lg-6">
+<div class="checkout-page__billing-address">
+<h2 class="checkout-page__billing-address__title">Billing details</h2>
+<form class="checkout-page__form">
+<div class="row">
+<div class="col-md-6">
+<div class="checkout-page__input-box">
+<input name="first_name" placeholder="First Name" required="" type="text" value=""/>
+</div>
+</div>
+<div class="col-md-6">
+<div class="checkout-page__input-box">
+<input name="last_name" placeholder="Last name" required="" type="text" value=""/>
+</div>
+</div>
+<div class="col-md-6">
+<div class="checkout-page__input-box">
+<input name="email" placeholder="Email address" type="email"/>
+</div>
+</div>
+<div class="col-md-6">
+<div class="checkout-page__input-box">
+<input name="form_phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone" required="" type="tel"/>
+</div>
+</div>
+<div class="col-md-12">
+<div class="checkout-page__input-box">
+<input name="Company" placeholder="Company" type="text" value=""/>
+</div>
+</div>
+<div class="col-md-12">
+<div class="checkout-page__input-box">
+<input name="address" placeholder="Address" type="text" value=""/>
+</div>
+</div>
+<div class="col-md-12">
+<div class="checkout-page__input-box">
+<input name="optional__address" placeholder="Apartment, Unit, etc(optional)" type="text" value=""/>
+</div>
+</div>
+<div class="col-md-6">
+<div class="checkout-page__input-box">
+<input name="Town/City" placeholder="Town / City" required="" type="text" value=""/>
+</div>
+</div>
+<div class="col-md-6">
+<div class="checkout-page__input-box">
+<select aria-label="Default select example" class="selectpicker">
+<option selected="">State</option>
+<option value="1">Canada</option>
+<option value="2">England</option>
+<option value="3">Australia</option>
+</select>
+</div>
+</div>
+<div class="col-md-6">
+<div class="checkout-page__input-box">
+<input name="form_zip" pattern="[0-9]*" placeholder="Zip code" type="text"/>
+</div>
+</div>
+<div class="col-md-6">
+<div class="checkout-page__input-box">
+<select aria-label="Default select example" class="selectpicker">
+<option selected="">Country</option>
+<option value="1">Dhaka</option>
+<option value="2">Rangpur</option>
+<option value="3">Rajshahi</option>
+</select>
+</div>
+</div>
+<div class="col-md-12">
+<div class="checkout-page__check-wrapper">
+<h2 class="checkout-page__shipping__title">Shipping Details</h2>
+<div class="checkout-page__check-box">
+<input checked="" id="skipper4" name="skipper4" type="checkbox"/>
+<label for="skipper4">Same as Billing Details<span></span></label>
+</div>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+<div class="col-xl-6 col-lg-6">
+<div class="row">
+<div class="col-md-12">
+<div class="checkout-page__input-box">
+<h2 class="checkout-page__billing-address__title">Additional Information</h2>
+<textarea name="form_order_notes" placeholder="Note about your order"></textarea>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xl-12 col-lg-12">
+<div class="checkout-page__cost-process">
+<h2 class="checkout-page__cost-process-title">Your Order</h2>
+<div class="row">
+<div class="col-lg-6">
+<div class="cart-process-wrap">
+<div class="cart-page__top cart-page__common d-flex align-items-center justify-content-between">
+<strong class="cart-page__carttitle">Product</strong>
+<strong class="cart-page__carttitle">Price</strong>
+</div>
+<div class="cart-page__carttotals-cost cart-page__common d-flex align-items-center justify-content-between">
+<strong class="cart-page__cartname">Cart Total</strong>
+<strong class="cart-page__cartprice">$300.00</strong>
+</div>
+<div class="cart-page__subtotals-cost cart-page__common d-flex align-items-center justify-content-between">
+<strong class="cart-page__cartname">SubTotal</strong>
+<strong class="cart-page__cartprice">$300.00</strong>
+</div>
+<div class="cart-page__shipping-area cart-page__common d-flex align-items-center justify-content-between">
+<strong class="cart-page__cartname">Shipping</strong>
+<strong class="cart-page__cartprice">$300.00</strong>
+</div>
+<div class="cart-page__intotals cart-page__common d-flex align-items-center justify-content-between">
+<strong class="cart-page__cartname">Total</strong>
+<strong class="cart-page__cartprice">$320.00</strong>
+</div>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="checkout-page__payment">
+<div class="checkout-page__payment__item checkout-page__payment__item--active">
+<h3 class="checkout-page__payment__title">Direct bank transfer</h3>
+<div class="checkout-page__payment__content" style="display: none;">
+                                                Make your payment directly into our bank account. Please
+                                                use your Order ID as the payment reference. Your order
+                                                wont be shipped until the funds have cleared.
+                                            </div>
+</div>
+<div class="checkout-page__payment__item">
+<h3 class="checkout-page__payment__title">
+                                                Cash on delivery
+                                            </h3>
+<div class="checkout-page__payment__content" style="display: none;">
+                                                Make your payment directly into our bank account. Please
+                                                use your Order ID as the payment reference. Your order
+                                                wont be shipped until the funds have cleared.
+                                            </div>
+</div>
+</div>
+<a class="espartyox-btn" href="#" rel="noreferrer" target="_blank">Place your Order<i class="icon-angle-small-right"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+{% endblock content %}
